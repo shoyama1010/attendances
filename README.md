@@ -2,6 +2,7 @@
 ＊フロントエンドもログイン機能以外は、Next.jsにて実装。API連携にて、SPA化。
 
 Laravel（Blade）で画面を構築し、  勤怠・休憩・修正申請を分離したDB設計で実装しています。
+
 (バックエンドは完成・API化済、UIは今後改良予定)
 
 フロントエンド(Next.js)：https://github.com/shoyama1010/attendance-frontend
@@ -158,7 +159,7 @@ http://localhost:3000/attendances
 
 ５．打刻機能（① statusは見た目わかるように、色を変えてます。②最初の出勤時のみ、誰かわかるように、ユーザー名を入れてます。）
 
-ステータス管理を明確化
+＊ステータス管理を明確化
 勤怠状態を ENUM で管理し、画面表示・ボタン制御・DB状態が一致するようにしました。
 
 ①<img width="1213" height="675" alt="Image" src="https://github.com/user-attachments/assets/f755c14d-846e-4639-94c8-cb577ced8b97" />
