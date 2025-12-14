@@ -1,6 +1,7 @@
 # atte-api（勤怠管理：バックエンド）
 ＊フロントエンドもログイン機能以外は、Next.jsにて実装。API連携にて、SPA化。
 
+Laravel（Blade）で画面を構築し、  勤怠・休憩・修正申請を分離したDB設計で実装しています。
 (バックエンドは完成・API化済、UIは今後改良予定)
 
 フロントエンド(Next.js)：https://github.com/shoyama1010/attendance-frontend
@@ -21,7 +22,8 @@ http://localhost/attendance
 
 ・メール認証機能（応用機能　補足３にて記載）
 
-・勤怠打刻機能（＊補足５ にて記載）
+・勤怠打刻機能（休憩は、1日複数回対応）
+（＊補足５ にて記載）
 
 ・管理者認証機能（補足１．にて）
 
@@ -40,6 +42,8 @@ http://localhost/attendance
 
 # 使用技術
 ・Laravel 8
+
+・Docker（開発環境）
 
 ・nginx 1.21.1
 
@@ -153,6 +157,10 @@ http://localhost:3000/attendances
 <img width="1176" height="679" alt="Image" src="https://github.com/user-attachments/assets/d882022e-6901-4e87-bbee-fb97deb44fd2" />
 
 ５．打刻機能（① statusは見た目わかるように、色を変えてます。②最初の出勤時のみ、誰かわかるように、ユーザー名を入れてます。）
+
+ステータス管理を明確化
+勤怠状態を ENUM で管理し、画面表示・ボタン制御・DB状態が一致するようにしました。
+
 ①<img width="1213" height="675" alt="Image" src="https://github.com/user-attachments/assets/f755c14d-846e-4639-94c8-cb577ced8b97" />
 ②<img width="1366" height="687" alt="Image" src="https://github.com/user-attachments/assets/a57febb7-7525-4833-8bda-d51947f1cce7" />
 
