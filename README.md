@@ -1,11 +1,11 @@
-# atte-api（勤怠管理：バックエンド）
+# attendance（勤怠管理：バックエンド）
 ＊フロントエンドもログイン機能以外は、Next.jsにて実装。API連携にて、SPA化。
 
 Laravel（Blade）で画面を構築し、  勤怠・休憩・修正申請を分離したDB設計で実装しています。
 
 (バックエンドは完成・API化済、UIは今後改良予定)
 
-フロントエンド(Next.js)：https://github.com/shoyama1010/attendance-frontend
+フロントエンド(Next.js)：https://github.com/shoyama1010/atte-frontend
 
 # 作成した目的
 
@@ -75,7 +75,7 @@ http://localhost/attendance
 # 環境構築
 ## 1 Gitファイルをクローンする
 
-git clone git@github.com:shoyama1010/atte-api.git
+git clone git@github.com:shoyama1010/attendance.git
 
 ## 2 Dockerコンテナを作成する
 
